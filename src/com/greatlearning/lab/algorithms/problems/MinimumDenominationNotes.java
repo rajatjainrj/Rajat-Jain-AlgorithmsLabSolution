@@ -42,6 +42,7 @@ public class MinimumDenominationNotes {
         mergeSort.sortDescending(currencyDenominations, 0, noOfCurrencyDenominations - 1);
 //        System.out.println("Descending Sorted Currency Denominations - " + Arrays.toString(currencyDenominations));
         minimumDenominationNote = currencyDenominations[currencyDenominations.length - 1];
+        System.out.println("Your payment approach in order to give min no of notes will be - ");
         int remainderAmount = printMinimumDenominations(amountToPay);
         while (remainderAmount > 0) {
             remainderAmount = printMinimumDenominations(remainderAmount);
